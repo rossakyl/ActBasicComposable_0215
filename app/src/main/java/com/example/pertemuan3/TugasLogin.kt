@@ -15,6 +15,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
@@ -48,6 +51,15 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.White,
                 fontSize = 14.sp
             )
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Logo UMY
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy), // Ganti nama drawable logo UMY
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(150.dp)
+            )
+
         }
     }
 }
