@@ -98,11 +98,11 @@ fun TataletakRowColumn(modifier: Modifier) {
 }
 
 @Composable
-fun TataletakBoxColumnRow(modifier: Modifier) {
+fun TataletakBoxColumnRow(modifier: Modifier = Modifier) {
     val gambar = painterResource(id = R.drawable.notasibalok)
-    Column {
+    Column(modifier = modifier) {
         Box(
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .height(110.dp)
                 .background(color = Color.Yellow),
@@ -110,26 +110,27 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         ) {
             Column {
                 Row(
-                    modifier = modifier.fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Text(text = "Col1_Row1_Komponen1")
-                    Text(text = "Col1_Row1_Komponen2")
-                    Text(text = "Col1_Row1_Komponen3")
+                    Text(text = "Col1_Row1_Komp1", fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                    Text(text = "Col1_Row1_Komp2", fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                    Text(text = "Col1_Row1_Komp3", fontSize = 12.sp, fontWeight = FontWeight.Medium)
                 }
                 Row(
-                    modifier = modifier.fillMaxWidth(),
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Text(text = "Col1_Row2_Komponen1")
-                    Text(text = "Col1_Row2_Komponen2")
-                    Text(text = "Col1_Row2_Komponen3")
+                    Text(text = "Col1_Row2_Komp1", fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                    Text(text = "Col1_Row2_Komp2", fontSize = 12.sp, fontWeight = FontWeight.Medium)
+                    Text(text = "Col1_Row2_Komp3", fontSize = 12.sp, fontWeight = FontWeight.Medium)
                 }
+
             }
         }
         Spacer(modifier = Modifier.height(10.dp))
         Box(
-            modifier = modifier
+            modifier = Modifier
                 .fillMaxWidth()
                 .height(300.dp)
                 .background(color = Color.Cyan),
