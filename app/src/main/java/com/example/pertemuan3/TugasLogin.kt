@@ -18,6 +18,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
 
 @Composable
 fun TugasLogin(modifier: Modifier = Modifier) {
@@ -80,6 +82,17 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 color = Color.Black,
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height(30.dp))
+
+            // Gambar Bulat
+            Image(
+                painter = painterResource(id = R.drawable.img_ti), // Ganti nama drawable TI
+                contentDescription = "Foto TI",
+                modifier = Modifier
+                    .size(220.dp)
+                    .clip(CircleShape),
+                contentScale = ContentScale.Crop
             )
         }
     }
