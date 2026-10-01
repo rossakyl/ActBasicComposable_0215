@@ -59,7 +59,28 @@ fun TugasLogin(modifier: Modifier = Modifier) {
                 contentDescription = "Logo UMY",
                 modifier = Modifier.size(150.dp)
             )
+            Spacer(modifier = Modifier.height(40.dp))
 
+            // Identitas Diri
+            Text(
+                text = "Nama",
+                color = Color.Red,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = "Rossa Kayla Isma Aziz",
+                color = Color.Blue,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height(4.dp))
+            Text(
+                text = "20240140215",
+                color = Color.Black,
+                fontSize = 22.sp,
+                fontWeight = FontWeight.Bold
+            )
         }
     }
 }
