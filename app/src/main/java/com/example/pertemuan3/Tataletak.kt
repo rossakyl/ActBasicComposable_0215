@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.Image
+import androidx.compose.ui.layout.ContentScale
 
 @Composable
 fun TataletakColumn(modifier: Modifier) {
@@ -120,4 +122,11 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             .height(300.dp)
             .background(color = Color.Cyan),
         contentAlignment = Alignment.Center
-    ){
+    ) {
+        Image(
+            painter = gambar,
+            contentDescription = null,
+            contentScale = ContentScale.Fit
+        )
+    }
+}
