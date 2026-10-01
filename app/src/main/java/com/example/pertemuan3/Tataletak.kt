@@ -104,5 +104,6 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         ) {
 
         }
+
+        }
     }
-}
